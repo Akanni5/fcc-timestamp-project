@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TimeStamp App</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/script/main.js" defer></script>
+</head>
+
+<body>
+    <h1>TimeStamp MicroService</h1>
+    <hr>
+    <h3>Example Usage:</h3>
+    <a data-link="/api/1451001600000" role="link" aria-disabled="true"
+        rel="nofollow">[project_url]/api/1451001600000</a><br>
+    <a data-link="/api/2022-12-13" role="link" aria-disabled="true" rel="nofollow">[project_url]/api/2022-12-13</a>
+    <form action="/api/query" method="get">
+        <input type="text" name="date" id ="date" required>
+        <button type="submit">Request</button>
+    </form>
+    <h3>Example Output:</h3>
+    <p id="output"></p>
+    <div>
+        <p>
+            Note: Clicking the links above will help you call and make request to the api.
+            <br>You'll see the output above this section, or below the Example Output.
+            <br>You can also make a query by using the input box.
+        </p>
+    </div>
+</body>
+
+</html>
